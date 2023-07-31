@@ -37,7 +37,7 @@ class MerchantController extends Controller
             ]);
         }
         catch (\Exception $exception) {
-            return response()->json($exception->getMessage());
+            return response()->json($exception->getMessage(), 500);
         }
     }
 }

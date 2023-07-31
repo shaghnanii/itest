@@ -21,6 +21,7 @@ class MerchantService
     public function register(array $data): Merchant
     {
         // TODO: Complete this method
+        return Merchant::query()->create($data);
     }
 
     /**
@@ -32,6 +33,7 @@ class MerchantService
     public function updateMerchant(User $user, array $data)
     {
         // TODO: Complete this method
+        $merchant = Merchant::query()->where->update($data);
     }
 
     /**
@@ -43,7 +45,7 @@ class MerchantService
      */
     public function findMerchantByEmail(string $email): ?Merchant
     {
-        // TODO: Complete this method
+//         TODO: Complete this method
     }
 
     /**
